@@ -26,8 +26,8 @@ def runMotor():
 	print("TESTING MOTOR")
 	GPIO.output(STDBY, GPIO.HIGH)
 	#FORWARD
-    in1 = GPIO.LOW
-    in2 = GPIO.HIGH
+	in1 = GPIO.LOW
+	in2 = GPIO.HIGH
 
 	GPIO.output(AIN1, in1)
 	GPIO.output(AIN2, in2)

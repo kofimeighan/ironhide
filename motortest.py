@@ -25,14 +25,15 @@ pwma.start(100)
 def runMotor():
 	print("TESTING MOTOR")
 	GPIO.output(STDBY, GPIO.HIGH)
-	in1 = GPIO.HIGH
-	in2 = GPIO.LOW
+	#FORWARD
+    in1 = GPIO.LOW
+    in2 = GPIO.HIGH
 
 	GPIO.output(AIN1, in1)
 	GPIO.output(AIN2, in2)
-	pwma.changeDutyCycle(50)
+	pwma.ChangeDutyCycle(50)
 
-	sleep(10)
+	sleep(5)
 
 	GPIO.output(STDBY, GPIO.LOW)
 	GPIO.cleanup()

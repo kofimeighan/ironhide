@@ -17,8 +17,8 @@ GPIO.setup(MOTOR_AIN1, GPIO.OUT)
 GPIO.setup(MOTOR_AIN2, GPIO.OUT)
 
 
-motor = GPIO.PWM(MOTOR_PWM)
-servo = GPIO.PWM(SERVO_PWM)
+#motor = GPIO.PWM(MOTOR_PWM)
+servo = GPIO.PWM(SERVO_PWM, 50)
 
 print("TESTING SERVO")
 servo.start(7.5)

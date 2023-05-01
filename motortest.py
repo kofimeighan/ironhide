@@ -33,7 +33,7 @@ def runMotor():
 	GPIO.output(AIN2, in2)
 	pwma.ChangeDutyCycle(50)
 
-	sleep(5)
+	sleep(1)
 
 	GPIO.output(STDBY, GPIO.LOW)
 	GPIO.cleanup()
